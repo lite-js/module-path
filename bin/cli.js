@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* jshint esnext: true, node: true, loopfunc: true, undef: true, unused: true */
 
 var commander = require('commander');
 var modulePath = require('../lib/index.js');

@@ -1,45 +1,47 @@
 {
-    "name": "module-path",
-    "title": "module-path",
-    "description": "",
-    "homepage": "https://github.com/zfinder/node-module-path",
-    "version": "0.0.20151019",
-    "main": "lib/index.js",
-    "author": {
-        "description": "team of zfinder",
-        "url": "https://github.com/orgs/zfinder/teams"
-    },
-    "bugs": {
-        "url": "https://github.com/zfinder/node-module-path/issues"
-    },
-    "dependencies": {
-        "commander": "*",
-        "global-modules": "*",
-        "pkg-dir": "*"
-    },
-    "devDependencies": {
-        "jasmine": "*"
-    },
-    "engines": {
-        "node": ">=0.8.0"
-    },
-    "keywords": [
-        "module",
-        "path",
-        "module-path",
-        "node-module-path"
-    ],
-    "licenses": [{
-        "type": "MIT",
-        "url": "https://github.com/zfinder/node-module-path/blob/master/LICENSE"
-    }],
-    "repository": {
-        "type": "https",
-        "url": "https://github.com/zfinder/node-module-path.git"
-    },
-    "bin": {
-        "module-path": "./bin/cli.js"
-    },
-    "scripts": {
+  "name": "module-path",
+  "title": "module-path",
+  "description": "",
+  "homepage": "https://github.com/zfinder/node-module-path",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": {
+    "description": "team of zfinder",
+    "url": "https://github.com/orgs/zfinder/teams"
+  },
+  "bugs": {
+    "url": "https://github.com/zfinder/node-module-path/issues"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "global-modules": "^0.2.2",
+    "pkg-dir": "^1.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "module",
+    "path",
+    "module-path",
+    "node-module-path"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zfinder/node-module-path/blob/master/LICENSE"
     }
+  ],
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/zfinder/node-module-path.git"
+  },
+  "bin": {
+    "module-path": "./bin/cli.js"
+  },
+  "scripts": {
+  }
 }
