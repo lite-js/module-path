@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 var commander = require('commander');
 var modulePath = require('../lib/index.js');
 var pkg = require('../package.json');
@@ -23,4 +22,3 @@ if (!name) {
         console.error('[ERROR: this module is not installed.]');
     }
 }
-

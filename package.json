@@ -3,7 +3,7 @@
   "title": "module-path",
   "description": "",
   "homepage": "https://github.com/zfinder/node-module-path",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "author": {
     "description": "team of zfinder",
@@ -13,12 +13,10 @@
     "url": "https://github.com/zfinder/node-module-path/issues"
   },
   "dependencies": {
-    "commander": "^2.9.0",
-    "global-modules": "^0.2.2",
-    "pkg-dir": "^1.0.0"
+    "commander": "^2.9.0"
   },
   "devDependencies": {
-    "jasmine": "*"
+    "jasmine": "^2.5.2"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -40,8 +38,9 @@
     "url": "https://github.com/zfinder/node-module-path.git"
   },
   "bin": {
-    "module-path": "./bin/cli.js"
+    "module-path": "./bin/module-path.js"
   },
   "scripts": {
+    "test": "jasmine init && jasmine"
   }
 }

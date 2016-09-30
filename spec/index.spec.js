@@ -1,20 +1,20 @@
-
 var path = require('path');
 var modulePath = require('../lib/index.js');
-var globalModulesDir = require('global-modules');
 
 describe('module-path', function () {
     it('exists', function () {
         expect(typeof modulePath).toEqual('function');
     });
     it('local module path', function () {
-        expect(modulePath('pkg-dir', __dirname))
-            .toBe(path.resolve(__dirname, '..', 'node_modules', 'pkg-dir'));
-        expect(modulePath('global-modules', __dirname))
-            .toBe(path.resolve(__dirname, '..', 'node_modules', 'global-modules'));
+        expect(modulePath('commander', __dirname))
+            .toBe(path.resolve(__dirname, '..', 'node_modules', 'commander/index.js'));
     });
-    it('global module path', function() {
-        expect(modulePath('npm'))
-            .toBe(path.resolve(globalModulesDir, 'npm'));
+    it('global module path', function () {
+        expect((modulePath('npm').indexOf('npm/lib/npm.js') > -1))
+            .toBe(true);
+    });
+    it('core module path', function () {
+        expect(modulePath('fs')).toBe('fs');
+        expect(modulePath('path')).toBe('path');
     });
 });
