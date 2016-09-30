@@ -16,7 +16,8 @@
     "commander": "^2.9.0"
   },
   "devDependencies": {
-    "jasmine": "^2.5.2"
+    "jasmine": "^2.5.2",
+    "zfinder": "^0.2.9"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -41,6 +42,13 @@
     "module-path": "./bin/module-path.js"
   },
   "scripts": {
+    "build-doc": "zfinder build",
+    "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
+    "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
+    "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
+    "push-master": "git checkout master && git push",
+    "push-tags": "git push --tag",
+    "sync-cnpm": "cnpm sync module-path",
     "test": "jasmine init && jasmine"
   }
 }
