@@ -3,36 +3,34 @@ module-path(1)
 
 locate the path of an installed node module
 
-## installation
+## install
 
 ```shell
-$ npm install module-path [-g]
+$ npm install @lite-js/module-path [-g]
 ```
 
-## usage
-
-API:
+## API
 
 ```javascript
-var modulePath = require('module-path');
+const modulePath = require('@lite-js/module-path')
 
 // global module
-var pathOfZFinder = modulePath('zfinder');
+console.log(modulePath('zfinder'))
 // => /Users/liangwensen/.nvm/versions/node/v4.2.2/lib/node_modules/.zfinder_npminstall/zfinder/0.2.9/zfinder/lib/index.js
 
 // local module
-var pathOfJasmine = modulePath('jasmine');
-// => /Users/liangwensen/repo/leungwensen/node-module-path/node_modules/.npminstall/jasmine/2.5.2/jasmine/lib/jasmine.js
+console.log(modulePath('mocha'))
+// => /Users/liangwensen/repo/leungwensen/module-path/node_modules/.npminstall/mocha/3.4.2/mocha/index.js
 
 // core module
-var pathOfPath = modulePath('path');
+console.log(modulePath('path'))
 // => path
 ```
 
-CLI:
+## CLI
 
 ```shell
-$ npm install module-path -g
+$ npm install @lite-js/module-path -g
 $ module-path zfinder
 # /Users/liangwensen/.nvm/versions/node/v4.2.2/lib/node_modules/.zfinder_npminstall/zfinder/0.2.9/zfinder/lib/index.js
 $ module-path npm

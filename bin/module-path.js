@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var commander = require('commander');
-var modulePath = require('../lib/index.js');
+var modulePath = require('../index.js');
 var pkg = require('../package.json');
 
 commander

@@ -1,6 +1,6 @@
 {
   "name": "@lite-js/module-path",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "locate the path of an installed node module",
   "main": "index.js",
   "bugs": {
