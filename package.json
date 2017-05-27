@@ -1,23 +1,15 @@
 {
-  "name": "module-path",
-  "title": "module-path",
-  "description": "",
-  "homepage": "https://github.com/zfinder/node-module-path",
-  "version": "0.2.0",
-  "main": "lib/index.js",
-  "author": {
-    "description": "team of zfinder",
-    "url": "https://github.com/orgs/zfinder/teams"
-  },
+  "name": "@lite-js/module-path",
+  "version": "0.0.1",
+  "description": "locate the path of an installed node module",
+  "main": "index.js",
   "bugs": {
-    "url": "https://github.com/zfinder/node-module-path/issues"
+    "url": "https://github.com/lite-js/module-path/issues"
   },
-  "dependencies": {
-    "commander": "^2.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jasmine": "^2.5.2",
-    "zfinder": "^0.2.9"
+    "commander": "^2.9.0",
+    "mocha": "^3.4.2"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -28,27 +20,15 @@
     "module-path",
     "node-module-path"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/zfinder/node-module-path/blob/master/LICENSE"
-    }
-  ],
+  "licenses": "MIT",
   "repository": {
-    "type": "https",
-    "url": "https://github.com/zfinder/node-module-path.git"
+    "type": "git",
+    "url": "git@github.com:lite-js/module-path.git"
   },
   "bin": {
     "module-path": "./bin/module-path.js"
   },
   "scripts": {
-    "build-doc": "zfinder build",
-    "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
-    "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
-    "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
-    "push-master": "git checkout master && git push",
-    "push-tags": "git push --tag",
-    "sync-cnpm": "cnpm sync module-path",
-    "test": "jasmine init && jasmine"
+    "test": "mocha"
   }
 }
