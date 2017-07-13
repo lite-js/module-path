@@ -1,3 +1,4 @@
+/* eslint-env mocha */
 const assert = require('assert')
 const path = require('path')
 const modulePath = require('../index.js')

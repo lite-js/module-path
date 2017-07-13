@@ -9,7 +9,9 @@
   "dependencies": {},
   "devDependencies": {
     "commander": "^2.9.0",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.2"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -20,7 +22,7 @@
     "module-path",
     "node-module-path"
   ],
-  "licenses": "MIT",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:lite-js/module-path.git"
@@ -28,7 +30,16 @@
   "bin": {
     "module-path": "./bin/module-path.js"
   },
+  "pre-commit": {
+    "run": [
+      "lint",
+      "test"
+    ],
+    "silent": false
+  },
   "scripts": {
+    "lint": "standard",
+    "lint-fix": "standard --fix",
     "test": "mocha"
   }
 }
