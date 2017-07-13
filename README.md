@@ -1,5 +1,5 @@
-module-path(1)
-==============
+module-path
+===========
 
 [![npm version](https://badge.fury.io/js/%40lite-js%2Fmodule-path.svg)](https://badge.fury.io/js/%40lite-js%2Fmodule-path) [![Build Status](https://travis-ci.org/lite-js/module-path.svg?branch=master)](https://travis-ci.org/lite-js/module-path)
 
